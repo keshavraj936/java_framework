@@ -5,7 +5,7 @@ import java.util.List;
 public class Array_List {
     public static void main(String[] args) {
 
-
+        //LEARNING FRAMEWORK
         ArrayList<Integer> list = new ArrayList<>();
         list.add(1);
         list.add(4);
@@ -36,6 +36,7 @@ public class Array_List {
 
         list.set(2,40);
         System.out.println(list);
+
 
 
 
