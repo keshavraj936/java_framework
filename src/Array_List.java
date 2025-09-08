@@ -3,6 +3,7 @@ import java.util.Collections;
 import java.util.List;
 
 
+
 public class Array_List {
     public static void main(String[] args) {
 
