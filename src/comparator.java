@@ -60,13 +60,13 @@ public class comparator {
 
 
 
-        List<Student> students = =new ArrayList<>();
+        List<Student> students =new ArrayList<>();
         students.add(new Student("Charlie", 3.5));
         students.add(new Student("Bob", 3.7));
         students.add(new Student("Alice", 3.5));
         students.add(new Student("Akshit" ,3.9));
 
-        Comparator<Student> comparator = Comparator.comparing(Student::getGpa).thenComparing(Student::getName);
+        Comparator<Student> comparator = Comparator.comparing(Student::getGpa).reversed().thenComparing(Student::getName);
         students.sort(comparator);
         for (Student s : students) {
             System.out.println(s.getName() + ": " + s.getGpa());
@@ -76,7 +76,7 @@ public class comparator {
 
 }
 
-public class Student{
+class Student{
     private String name;
     private double gpa;
 
