@@ -22,7 +22,7 @@ public class LRUCACHE<K, V> extends LinkedHashMap<K, V> {
         studentMap.put("Alice", 89);
         studentMap.put("Ram", 91);
 
-        studentMap.get("Bob");
+        studentMap.put("Bob",100);
 
         studentMap.put("Vipul", 88);
 
