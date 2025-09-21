@@ -1,7 +1,7 @@
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
-// Hey there how are you? let's go
+// Hey there how are you? let's go there
 public class LinkedHashMapDemo {
     public static void main(String[] args) {
 
@@ -19,6 +19,5 @@ public class LinkedHashMapDemo {
         for(Map.Entry<String, Integer> entry : linkedHashMap.entrySet()){
             System.out.println(entry.getKey() + ": " + entry.getValue());
         }
-
     }
 }
