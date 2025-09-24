@@ -4,7 +4,7 @@ import java.util.Map;
 public class LRUCACHE<K, V> extends LinkedHashMap<K, V> {
 
     // LRU - Least Recently Used
-    // This is for commit
+
     private int capacity;
 
 
