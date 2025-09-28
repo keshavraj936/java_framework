@@ -1,10 +1,18 @@
+import java.lang.ref.WeakReference;
+
 public class Garbage_Collection {
     public static void main(String[] args) {
 
 
-        Phone phone = new Phone("Apple", "16 Pro Max");
-        System.out.println(phone);
+        WeakReference<Phone> phoneWeakReference = new WeakReference<>(new Phone("Apple", "16 Pro Max"));
+        System.out.println(phoneWeakReference.get());
+        System.gc();
+       try{
+           Thread.sleep(10000);
 
+       }catch (Exception e){
+       }
+        System.out.println(phoneWeakReference.get());
 
     }
 }
