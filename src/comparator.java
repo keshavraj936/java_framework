@@ -76,11 +76,11 @@ public class comparator {
 
 }
 
-class Student{
+class Student implements Comparable<Student>{
     private String name;
     private double gpa;
 
-    public Student(String name, double gpa) {
+    public Student(String name, double gpa)  {
         this.name = name;
         this.gpa = gpa;
     }
@@ -101,4 +101,16 @@ class Student{
         this.gpa = gpa;
     }
 
+    @Override
+    public int compareTo(Student o) {
+        return Double.compare(o.getGpa(), this.getGpa());
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", gpa=" + gpa +
+                '}';
+    }
 }
